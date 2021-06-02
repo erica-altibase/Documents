@@ -1,14 +1,15 @@
 <!-- START doctoc generated TOC please keep comment here to allow auto update -->
 <!-- DON'T EDIT THIS SECTION, INSTEAD RE-RUN doctoc TO UPDATE -->
-**Table of Contents**  *generated with [DocToc](https://github.com/thlorenz/doctoc)*
+**Table of Contents**  
 
 - [Altibase 7.1.0.5.4 Patch Notes](#altibase-71054-patch-notes)
   - [Fixed Bugs](#fixed-bugs)
-    - [BUG-48761 온라인 로그파일 open() 실패 시 Altibase 서버가 비정상 종료합니다.](#bug-48761%C2%A0%EC%98%A8%EB%9D%BC%EC%9D%B8-%EB%A1%9C%EA%B7%B8%ED%8C%8C%EC%9D%BC-open-%EC%8B%A4%ED%8C%A8-%EC%8B%9C-altibase-%EC%84%9C%EB%B2%84%EA%B0%80-%EB%B9%84%EC%A0%95%EC%83%81-%EC%A2%85%EB%A3%8C%ED%95%A9%EB%8B%88%EB%8B%A4)
-    - [BUG-48792 SELECT DISTINCT 와 GROUP BY CUBE 절이 뷰에서 사용될 경우 결과 오류가 발생합니다.](#bug-48792%C2%A0select-distinct-%EC%99%80-group-by-cube-%EC%A0%88%EC%9D%B4-%EB%B7%B0%EC%97%90%EC%84%9C-%EC%82%AC%EC%9A%A9%EB%90%A0-%EA%B2%BD%EC%9A%B0-%EA%B2%B0%EA%B3%BC-%EC%98%A4%EB%A5%98%EA%B0%80-%EB%B0%9C%EC%83%9D%ED%95%A9%EB%8B%88%EB%8B%A4)
-    - [BUG-48800 FORM 절에 파티션을 지정하고 WHERE 절에서 파티션 키 범위가 아닌 조건을 사용한 SELECT 문에서 결과 오류가 발생할 수 있습니다.](#bug-48800%C2%A0form-%EC%A0%88%EC%97%90-%ED%8C%8C%ED%8B%B0%EC%85%98%EC%9D%84-%EC%A7%80%EC%A0%95%ED%95%98%EA%B3%A0-where-%EC%A0%88%EC%97%90%EC%84%9C-%ED%8C%8C%ED%8B%B0%EC%85%98-%ED%82%A4-%EB%B2%94%EC%9C%84%EA%B0%80-%EC%95%84%EB%8B%8C-%EC%A1%B0%EA%B1%B4%EC%9D%84-%EC%82%AC%EC%9A%A9%ED%95%9C-select-%EB%AC%B8%EC%97%90%EC%84%9C-%EA%B2%B0%EA%B3%BC-%EC%98%A4%EB%A5%98%EA%B0%80-%EB%B0%9C%EC%83%9D%ED%95%A0-%EC%88%98-%EC%9E%88%EC%8A%B5%EB%8B%88%EB%8B%A4)
+    - [BUG-48761 온라인 로그파일 open() 실패 시 Altibase 서버가 비정상 종료합니다.](#bug-48761%EC%98%A8%EB%9D%BC%EC%9D%B8-%EB%A1%9C%EA%B7%B8%ED%8C%8C%EC%9D%BC-open-%EC%8B%A4%ED%8C%A8-%EC%8B%9C-altibase-%EC%84%9C%EB%B2%84%EA%B0%80-%EB%B9%84%EC%A0%95%EC%83%81-%EC%A2%85%EB%A3%8C%ED%95%A9%EB%8B%88%EB%8B%A4)
+    - [BUG-48792 SELECT DISTINCT 와 GROUP BY CUBE 절이 뷰에서 사용될 경우 결과 오류가 발생합니다.](#bug-48792select-distinct-%EC%99%80-group-by-cube-%EC%A0%88%EC%9D%B4-%EB%B7%B0%EC%97%90%EC%84%9C-%EC%82%AC%EC%9A%A9%EB%90%A0-%EA%B2%BD%EC%9A%B0-%EA%B2%B0%EA%B3%BC-%EC%98%A4%EB%A5%98%EA%B0%80-%EB%B0%9C%EC%83%9D%ED%95%A9%EB%8B%88%EB%8B%A4)
+    - [BUG-48800 FORM 절에 파티션을 지정하고 WHERE 절에서 파티션 키 범위가 아닌 조건을 사용한 SELECT 문에서 결과 오류가 발생할 수 있습니다.](#bug-48800form-%EC%A0%88%EC%97%90-%ED%8C%8C%ED%8B%B0%EC%85%98%EC%9D%84-%EC%A7%80%EC%A0%95%ED%95%98%EA%B3%A0-where-%EC%A0%88%EC%97%90%EC%84%9C-%ED%8C%8C%ED%8B%B0%EC%85%98-%ED%82%A4-%EB%B2%94%EC%9C%84%EA%B0%80-%EC%95%84%EB%8B%8C-%EC%A1%B0%EA%B1%B4%EC%9D%84-%EC%82%AC%EC%9A%A9%ED%95%9C-select-%EB%AC%B8%EC%97%90%EC%84%9C-%EA%B2%B0%EA%B3%BC-%EC%98%A4%EB%A5%98%EA%B0%80-%EB%B0%9C%EC%83%9D%ED%95%A0-%EC%88%98-%EC%9E%88%EC%8A%B5%EB%8B%88%EB%8B%A4)
   - [Changes](#changes)
     - [Version Info](#version-info)
+    - [호환성](#%ED%98%B8%ED%99%98%EC%84%B1)
     - [프로퍼티](#%ED%94%84%EB%A1%9C%ED%8D%BC%ED%8B%B0)
     - [성능 뷰](#%EC%84%B1%EB%8A%A5-%EB%B7%B0)
 
